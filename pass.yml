@@ -12,7 +12,6 @@
           result: "success"
           transaction_id: "{{ transaction_id }}"
         body_format: json
-        
-   - name: Log result
-     debug:
-       msg: "Successful"
+    - name: Log result
+      debug:
+        msg: "Successful"
