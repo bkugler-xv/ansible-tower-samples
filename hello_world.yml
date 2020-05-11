@@ -4,4 +4,7 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-
+     
+    - name: Capture Transaction ID
+      debug:
+        msg: "{{ transaction_id }}"
