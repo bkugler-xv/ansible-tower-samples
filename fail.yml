@@ -13,6 +13,6 @@
           transaction_id: "{{ transaction_id }}"
         body_format: json
         
-   - name: Log result
-     debug:
-       msg: "Failure"
+    - name: Log result
+      debug:
+        msg: "Failure"
