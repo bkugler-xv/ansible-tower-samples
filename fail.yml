@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+ 
+  tasks:
+    - name: Create a positive response
+      uri:
+        url: "{{ SNOW_url }}"
+        method: POST
+        body:
+          result: "fail"
+          transaction_id: "{{ transaction_id }}"
+        body_format: json
+        
+   - name: Log result
+     debug:
+       msg: "Failure"
